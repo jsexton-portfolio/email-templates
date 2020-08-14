@@ -1,0 +1,19 @@
+<html>
+<head></head>
+<body><h1>Contact Message Received From {{sender.alias}} </h1>
+<div>
+    <p>You have received a contact message from {{sender.alias}}. </p>
+    <h2>Sender Details</h2>
+    <p>Alias: {{sender.alias}} </p>
+    <p>Email: {{sender.email}} </p>
+    <p>Phone: {{sender.phone}} </p>
+    <p>Reason: {{reason}} </p>
+    <p>IP: {{sender.ip}} </p>
+    <p>User Agent: {{sender.user_agent}} </p>
+    <h2>Message</h2>
+    <p>Id: {{id}}</p>
+    <p>{{message}}</p>
+    <h2>Misc</h2>
+</div>
+</body>
+</html>

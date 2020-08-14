@@ -1,0 +1,8 @@
+{
+  "Template": {
+    "TemplateName": "contact-message-created",
+    "SubjectPart": "Contact Message Received From: {{sender.alias}}",
+    "HtmlPart": "<html><head></head><body><h1>Contact Message Received From {{sender.alias}}</h1><div> <p> You have received a contact message from {{sender.alias}}. </p><h2>Sender Details</h2> <p> Alias: {{sender.alias}}</p><p> Email: {{sender.email}}</p>{{#if sender.phone}}<p>Phone: {{sender.phone}}</p>{{/if}}<p> Reason: {{reason}}</p><p> IP: {{sender.ip}}</p><p> User Agent: {{sender.user_agent}}</p><h2>Message</h2> <p>Id: {{id}}</p><p>{{message}}</p></div></body></html>",
+    "TextPart": "Contact Message Received From {{sender.alias}}.\nAlias: {{sender.alias}}\nEmail: {{sender.email}}\n{{#if sender.phone}}Phone: {{sender.phone}}\n{{/if}}Reason: {{reason}}\nIP: {{sender.ip}}\n User Agent: {{sender.user_agent}}\nMessage ({{id}}):\n{{message}}"
+  }
+}
